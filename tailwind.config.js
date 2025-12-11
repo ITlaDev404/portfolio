@@ -7,7 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        portfolioBackground: '#F0F0F0', // Votre couleur personnalisée
+        headersColor:'#E8E8E8',
+        portfolioBackground: '#FCFCFC', //  couleur personnalisée pour le Backend 
+        portfolioBackground2: '#F9F9F9',
+        protfolioText: '#202020', //coleur personnalisée pour le texte
+        protfolioText2: '#646464'
       }
     },
   },
