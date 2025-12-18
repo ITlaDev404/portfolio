@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@theme {
+  --color-headersColor: #f72d2d;
+  --color-portfolioText: #202020;
+  --color-portfolioBackground: #FCFCFC;
+  --color-portfolioBackground2: #F9F9F9;
+}
