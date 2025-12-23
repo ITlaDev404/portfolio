@@ -17,18 +17,26 @@ const languages: Language[] = [
   },
   {
     id: 2,
-    name: "E-commerce React App",
-    description: "",
-    imageUrl: `${import.meta.env.BASE_URL}Languages_img/Csharp_Logo.png`,
-    demoUrl: "https://example.com/project2",
+    name: "Typescript",
+    description: ".",
+    imageUrl: `${import.meta.env.BASE_URL}Languages_img/Typescript.png`,
+    demoUrl: "https://www.typescriptlang.org/",
     
   },
   {
     id: 3,
-    name: "Task Management CLI",
+    name: "Csharp",
     description: "",
-    imageUrl: `${import.meta.env.BASE_URL}Languages_img/PHP.svg`,
-    demoUrl: undefined,
+    imageUrl: `${import.meta.env.BASE_URL}Languages_img/Csharp_Logo.png`,
+    demoUrl: "https://learn.microsoft.com/fr-fr/dotnet/csharp/",
+    
+  },
+  {
+    id: 4,
+    name: "PHP",
+    description: "",
+    imageUrl: `${import.meta.env.BASE_URL}Languages_img/PHP.png`,
+    demoUrl:"https://www.php.net/",
    
   },
 ];
