@@ -20,7 +20,7 @@ const touls: Touls[] = [
     name: "git",
     description: ".",
     imageUrl: `${import.meta.env.BASE_URL}Languages_img/git.png`,
-    demoUrl: "https://mariadb.org/",
+    demoUrl: "https://git-scm.com/",
     
   },
   {
@@ -28,7 +28,7 @@ const touls: Touls[] = [
     name: "github",
     description: "",
     imageUrl: `${import.meta.env.BASE_URL}Languages_img/github.svg`,
-    demoUrl: "https://www.mysql.com/fr/",
+    demoUrl: "https://github.com/",
     
   },
    {
@@ -36,7 +36,7 @@ const touls: Touls[] = [
     name: "AWS",
     description: "",
     imageUrl: `${import.meta.env.BASE_URL}Languages_img/AWS.svg`,
-    demoUrl: "https://www.mysql.com/fr/",
+    demoUrl: "https://aws.amazon.com/fr/",
     
   },
   
