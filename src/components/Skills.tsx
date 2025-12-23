@@ -1,5 +1,7 @@
 import languages from "../data/languages.ts";
 import frameworks from "../data/framworks.ts";
+import databases from "../data/databases.ts";
+import touls from "../data/touls.ts";
 const Skills = () => {
   return (
     <section className="bg-componentColor text-portfolioText p-12 text-center  max-w-7xl w-7xl min-w-2xl px-4 mx-auto rounded-xl mb-12 shadow-lg   overflow-hidden">
@@ -42,6 +44,54 @@ const Skills = () => {
                 <img
                   src={framework.imageUrl}
                   alt={framework.name}
+                  className="w-40 h-40 object-contain mx-auto"
+                />
+              </a>
+              <div className="p-6">
+                <div className="flex justify-center space-x-4"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      {/*data bases*/}
+      <section className="bg-componentColor2 text-black p-12 text-center pt-2.5 mr-6 ml-6 shadow-lg rounded-xl mb-12">
+        <h1 className="text-lg font-bold mb-8">Bases de données</h1>
+        <div className="flex flex-wrap justify-center gap-8">
+          {databases.map((database) => (
+            <div key={database.id} className="">
+              <a
+                href={database.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={database.imageUrl}
+                  alt={database.name}
+                  className="w-40 h-40 object-contain mx-auto"
+                />
+              </a>
+              <div className="p-6">
+                <div className="flex justify-center space-x-4"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      {/*data bases*/}
+      <section className="bg-componentColor2 text-black p-12 text-center pt-2.5 mr-6 ml-6 shadow-lg rounded-xl mb-12">
+        <h1 className="text-lg font-bold mb-8">Outils & Environnements</h1>
+        <div className="flex flex-wrap justify-center gap-8">
+          {touls.map((toul) => (
+            <div key={toul.id} className="">
+              <a
+                href={toul.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={toul.imageUrl}
+                  alt={toul.name}
                   className="w-40 h-40 object-contain mx-auto"
                 />
               </a>
