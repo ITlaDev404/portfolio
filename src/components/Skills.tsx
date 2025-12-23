@@ -1,8 +1,33 @@
+import languages from "../data/languages.ts";
+
 const Skills = () => {
   return (
-    <section className="bg-white text-gray-800 p-12 text-center">
+    <section className="bg-componentColor text-portfolioText p-12 text-center  max-w-7xl w-7xl min-w-2xl px-4 mx-auto rounded-xl mb-12 shadow-lg   overflow-hidden">
       <h1 className="text-4xl font-bold mb-4">Compétences</h1>
-      <p className="text-lg">These are my technical skills.</p>
+
+      <section className="bg-componentColor2 text-black p-12 text-center pt-2.5 shadow-lg rounded-xl">
+        <h1 className="text-lg font-bold mb-8">languages de programation</h1>
+        <div className="">
+          {languages.map((language) => (
+            <div key={language.id} className="">
+              <a
+                href={language.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={language.imageUrl}
+                  alt={language.name}
+                  className="w-40 h-40 object-contain mx-auto"
+                />
+              </a>
+              <div className="p-6">
+                <div className="flex justify-center space-x-4"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </section>
   );
 };
