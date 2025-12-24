@@ -20,7 +20,7 @@ const Skills = () => {
                 <img
                   src={language.imageUrl}
                   alt={language.name}
-                  className="w-40 h-40 object-contain mx-auto"
+                  className="w-40 h-40 object-contain mx-auto "
                 />
               </a>
               <div className="p-6">
