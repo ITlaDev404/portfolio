@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 
-const Header: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState<Boolean>(false);
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+interface HeaderProps {
+  onNavOpen: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ onNavOpen }) => {
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -11,18 +15,20 @@ const Header: React.FC = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <header
       className={` sticky top-0 z-50 transition-colors duration-300 ${
         isScrolled ? "bg-componentColor shadow-lg" : "bg-portfolioBackground2"
-      } duration-300  text-protfolioText p-4 text-center text-2xl font-bold  border-borderColor border-b-1`}
+      } duration-300  text-protfolioText p-4 text-center text-2xl font-bold  border-borderColor border-b`}
     >
       <button
-        onClick={() => setIsMenuOpen(true)}
-        className="bg-componentColor2 hover:bg-componentColor3  active:bg-componentColor border-solid border-borderColor text-portfolioText text-center bg-center text-2xl  grid-cols-1 mr-4 px-4 py-2 rounded hover:shadow-lg  "
+        onClick={onNavOpen}
+        className="opeModalNav bg-componentColor2 hover:bg-componentColor3  active:bg-componentColor border-solid border-borderColor text-portfolioText text-center bg-center text-2xl  grid-cols-1 mr-4 px-4 py-2 rounded hover:shadow-lg  "
       >
         Navigation
       </button>
+
       <button
         onClick={() =>
           window.open(
@@ -40,6 +46,7 @@ const Header: React.FC = () => {
       </button>
     </header>
   );
+  
 };
 
 export default Header;
