@@ -2,7 +2,7 @@ import projects from '../data/projects';
 
 const Projects = () => {
   return (
-    <section className="bg-gray-200 text-black p-12 text-center">
+    <section id="projects" className="bg-gray-200 text-black p-12 text-center">
       <h1 className="text-4xl font-bold mb-8">My Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projects.map((project) => (

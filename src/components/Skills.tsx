@@ -4,7 +4,7 @@ import databases from "../data/databases.ts";
 import touls from "../data/touls.ts";
 const Skills = () => {
   return (
-    <section className="bg-componentColor text-portfolioText p-12 text-center  max-w-7xl w-7xl min-w-2xl px-4 mx-auto rounded-xl mb-12 shadow-lg   overflow-hidden">
+    <section id="skills" className="bg-componentColor text-portfolioText p-12 text-center  max-w-7xl w-7xl min-w-2xl px-4 mx-auto rounded-xl mb-12 shadow-lg   overflow-hidden">
       <h1 className="text-4xl font-bold mb-4">Compétences</h1>
       {/*  languages de programation */}
       <section className="bg-componentColor2 text-black p-12 text-center pt-2.5 mr-6 ml-6 shadow-lg rounded-xl mb-12 pb-3">

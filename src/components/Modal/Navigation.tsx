@@ -12,40 +12,40 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black/20 bg-opacity-200 z-999 flex justify-start text-center w-screen h-screen top-0 left-0">
-      <div className="bg-componentColor w-64 h-full p-4 justify-center transform transition-transform duration-300 ease-in-out  max-w-prose mx-auto rounded-xl">
+      <div className="bg-componentColor m-auto   w-80 h-80 p-4 justify-center transform transition-transform duration-300 ease-in-out  max-w-prose mx-auto rounded-xl">
         <button
           onClick={onClose}
-          className="text-protfolioText text-2xl float-right"
+          className="text-protfolioText text-2xl float-right hover:font-bold active:text-gray-600"
         >
-          ❌
+          X
         </button>
-        <h2 className="text-protfolioText text-2xl font-bold mb-4">
+        <h2 className="text-protfolioText text-3xl font-bold mb-4 -auto ">
           Navigation
         </h2>
-        <ul>
-          <li>
+        <ul className="text-2xl ml-5 text-left  ">
+          <li className="hover:text-3xl mb-1.5 hover:text-portfolioText2 hover:underline">
             <a href="#hero" onClick={onClose}>
-              Accueil
+              #Accueil
             </a>
           </li>
-          <li>
+          <li className="hover:text-3xl mb-1.5 hover:text-portfolioText2 hover:underline">
             <a href="#about" onClick={onClose}>
-              À propos
+              #À propos
             </a>
           </li>
-          <li>
+          <li className="hover:text-3xl mb-1.5 hover:text-portfolioText2 hover:underline">
             <a href="#skills" onClick={onClose}>
-              Compétences
+              #Compétences
             </a>
           </li>
-          <li>
+          <li className="hover:text-3xl mb-1.5 hover:text-portfolioText2 hover:underline">
             <a href="#projects" onClick={onClose}>
-              Projets
+              #Projets
             </a>
           </li>
-          <li>
+          <li className="hover:text-3xl mb-1.5 hover:text-portfolioText2 hover:underline">
             <a href="#contact" onClick={onClose}>
-              Contact
+              #Contact
             </a>
           </li>
         </ul>
