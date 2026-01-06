@@ -7,15 +7,19 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navigation from "./components/Modal/Navigation";
+import ContactModal from "./components/Modal/ContactModal";
 
 function App() {
   const [isMenuNavOpen, setIsMenuNavOpen] = useState(false);
+  const [isMenuConOpen, setIsMenuConOpen] = useState(false);
 
   return (
     <>
       <Navigation isOpen={isMenuNavOpen} onClose={() => setIsMenuNavOpen(false)} />
-      <div className="min-h-screen bg-portfolioBackground2 text-gray-900 flex flex-col">
-        <Header onNavOpen={() => setIsMenuNavOpen(true)} />
+      <ContactModal isOpenContact={isMenuConOpen} onCloseContact={() =>setIsMenuConOpen(false)}/>
+      <div className="min-h-screen bg-portfolioBackground2 text-gray-900 flex flex-col" >
+
+        <Header onNavOpen={() => setIsMenuNavOpen(true)} onConOpen={() => setIsMenuConOpen(true)} />
         <Hero />
         <About />
         <Skills />
