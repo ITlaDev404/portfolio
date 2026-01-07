@@ -5,7 +5,7 @@ interface HeaderProps {
   onConOpen: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ onNavOpen , onConOpen }) => {
+const Header: React.FC<HeaderProps> = ({ onNavOpen, onConOpen }) => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
@@ -42,12 +42,14 @@ const Header: React.FC<HeaderProps> = ({ onNavOpen , onConOpen }) => {
       >
         Télécharger CV
       </button>
-      <button onClick={onConOpen} className="bg-componentColor2 hover:bg-componentColor3 active:bg-componentColor border-solid border-borderColor text-portfolioText text-center bg-center text-2xl  grid-cols-1 ml-4 px-4 py-2 rounded hover:shadow-lg">
+      <button
+        onClick={onConOpen}
+        className="bg-componentColor2 hover:bg-componentColor3 active:bg-componentColor border-solid border-borderColor text-portfolioText text-center bg-center text-2xl  grid-cols-1 ml-4 px-4 py-2 rounded hover:shadow-lg"
+      >
         Contact
       </button>
     </header>
   );
-  
 };
 
 export default Header;
