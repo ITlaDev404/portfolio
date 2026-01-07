@@ -4,11 +4,11 @@ import databases from "../data/databases.ts";
 import touls from "../data/touls.ts";
 const Skills = () => {
   return (
-    <section id="skills" className="bg-componentColor text-portfolioText p-12 text-center  max-w-7xl w-7xl min-w-2xl px-4 mx-auto rounded-xl mb-12 shadow-lg   overflow-hidden">
+    <section id="skills" className="bg-componentColor text-portfolioText p-12 text-center  max-w-7xl w-5xl min-w-2xl px-4 mx-auto rounded-xl mb-40 shadow-lg mt-20  overflow-hidden">
       <h1 className="text-4xl font-bold mb-4">Compétences</h1>
       {/*  languages de programation */}
-      <section className="bg-componentColor2 text-black p-12 text-center pt-2.5 mr-6 ml-6 shadow-lg rounded-xl mb-12 pb-3">
-        <h1 className="text-lg font-bold mb-8">languages de programation</h1>
+      <section className="group bg-componentColor2 text-black p-12 text-center pt-2.5 w-4xl h-70 max-h-80 m-auto shadow-lg rounded-xl mb-12   pb-">
+        <h1 className="text-lg font-bold mb-8 group-hover:underline">languages de programation</h1>
         <div className="flex flex-wrap justify-center gap-8">
           {languages.map((language) => (
             <div key={language.id} className="">
@@ -20,7 +20,7 @@ const Skills = () => {
                 <img
                   src={language.imageUrl}
                   alt={language.name}
-                  className="w-40 h-40 object-contain mx-auto "
+                  className="size-30 hover:size-35 object-contain mx-auto "
                 />
               </a>
               <div className="p-6">
@@ -31,8 +31,8 @@ const Skills = () => {
         </div>
       </section>
       {/*Frameworks & Librairies*/}
-      <section className="bg-componentColor2 text-black p-12 text-center pt-2.5 mr-6 ml-6 shadow-lg rounded-xl mb-12">
-        <h1 className="text-lg font-bold mb-8">Frameworks & Librairies</h1>
+      <section className="group bg-componentColor2 text-black p-12 text-center pt-2.5 w-4xl h-70 max-h-80 m-auto shadow-lg rounded-xl mb-12   pb-">
+        <h1 className="text-lg font-bold mb-8 group-hover:underline">Frameworks & Librairies</h1>
         <div className="flex flex-wrap justify-center gap-8">
           {frameworks.map((framework) => (
             <div key={framework.id} className="">
@@ -44,7 +44,7 @@ const Skills = () => {
                 <img
                   src={framework.imageUrl}
                   alt={framework.name}
-                  className="w-40 h-40 object-contain mx-auto"
+                  className="size-30 hover:size-35 object-contain mx-auto"
                 />
               </a>
               <div className="p-6">
@@ -55,8 +55,8 @@ const Skills = () => {
         </div>
       </section>
       {/*data bases*/}
-      <section className="bg-componentColor2 text-black p-12 text-center pt-2.5 mr-6 ml-6 shadow-lg rounded-xl mb-12">
-        <h1 className="text-lg font-bold mb-8">Bases de données</h1>
+      <section className="group bg-componentColor2 text-black p-12 text-center pt-2.5 w-4xl h-70 max-h-80 m-auto shadow-lg rounded-xl mb-12   pb-">
+        <h1 className="text-lg font-bold mb-8 group-hover:underline">Bases de données</h1>
         <div className="flex flex-wrap justify-center gap-8">
           {databases.map((database) => (
             <div key={database.id} className="">
@@ -68,7 +68,7 @@ const Skills = () => {
                 <img
                   src={database.imageUrl}
                   alt={database.name}
-                  className="w-40 h-40 object-contain mx-auto"
+                  className="size-30 hover:size-35 object-contain mx-auto"
                 />
               </a>
               <div className="p-6">
@@ -78,9 +78,9 @@ const Skills = () => {
           ))}
         </div>
       </section>
-      {/*data bases*/}
-      <section className="bg-componentColor2 text-black p-12 text-center pt-2.5 mr-6 ml-6 shadow-lg rounded-xl mb-12">
-        <h1 className="text-lg font-bold mb-8">Outils & Environnements</h1>
+      {/*Outils */}
+      <section className="group bg-componentColor2 text-black p-12 text-center pt-2.5 w-4xl h-70 max-h-80 m-auto shadow-lg rounded-xl mb-12   pb-">
+        <h1 className="text-lg font-bold mb-8 group-hover:underline">Outils & Environnements</h1>
         <div className="flex flex-wrap justify-center gap-8">
           {touls.map((toul) => (
             <div key={toul.id} className="">
@@ -92,7 +92,7 @@ const Skills = () => {
                 <img
                   src={toul.imageUrl}
                   alt={toul.name}
-                  className="w-40 h-40 object-contain mx-auto"
+                  className="size-30 hover:size-35 object-contain mx-auto"
                 />
               </a>
               <div className="p-6">

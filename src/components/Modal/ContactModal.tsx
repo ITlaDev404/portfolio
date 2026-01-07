@@ -18,7 +18,7 @@ const ContactModal: React.FC<NavigationProps> = ({
       <div className="bg-componentColor m-auto   w-80 h-80 p-4 justify-center transform transition-transform duration-300 ease-in-out  max-w-prose mx-auto rounded-xl">
         <button
           onClick={onCloseContact}
-          className="text-protfolioText text-2xl float-right hover:font-bold active:text-gray-600"
+          className="text-protfolioText text-2xl float-right hover:font-bold active:text-gray-600 hover:underline"
         >
           X
         </button>
