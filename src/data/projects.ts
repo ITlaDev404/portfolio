@@ -26,11 +26,11 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    name: "Task Management CLI",
-    description: "A command-line interface tool for managing daily tasks and to-do lists.",
-    imageUrl: "https://via.placeholder.com/300x200/0000FF/FFFFFF?text=Project+3",
-    demoUrl: undefined,
-    sourceCodeUrl: "https://github.com/yourusername/project3",
+    name: "GoatsMartialArts",
+    description: "site vitrine pour montrer les meilleurs dans tous les temps dans chaque sport de combat ",
+    imageUrl: `${import.meta.env.BASE_URL}Languages_img/GoatsMartialArts.png`,
+    demoUrl: "https://itladev404.github.io/GoatMartialArt/index.html",
+    sourceCodeUrl: "https://github.com/ITlaDev404/GoatMartialArt",
   },
 ];
 
