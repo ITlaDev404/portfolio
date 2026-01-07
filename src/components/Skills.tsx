@@ -25,7 +25,7 @@ const Skills = () => {
                 <img
                   src={language.imageUrl}
                   alt={language.name}
-                  className="size-30 hover:size-35 object-contain mx-auto "
+                  className="size-30 hover:size-35 object-contain mx-auto  "
                 />
               </a>
               <div className="p-6">
@@ -51,7 +51,7 @@ const Skills = () => {
                 <img
                   src={framework.imageUrl}
                   alt={framework.name}
-                  className="size-30 hover:size-35 object-contain mx-auto"
+                  className="size-30 hover:size-35 object-contain mx-auto "
                 />
               </a>
               <div className="p-6">
@@ -77,7 +77,7 @@ const Skills = () => {
                 <img
                   src={database.imageUrl}
                   alt={database.name}
-                  className="size-30 hover:size-35 object-contain mx-auto"
+                  className="size-30 hover:size-35 object-contain mx-auto "
                 />
               </a>
               <div className="p-6">
@@ -99,7 +99,7 @@ const Skills = () => {
                 <img
                   src={toul.imageUrl}
                   alt={toul.name}
-                  className="size-30 hover:size-35 object-contain mx-auto"
+                  className="size-30 hover:size-35 object-contain mx-auto "
                 />
               </a>
               <div className="p-6">

@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="  bg-componentColor hover:bg-componentColor2 text-portfolioText p-12 p-max-12 text-center hover:shadow-lg max-w-prose mx-auto rounded-xl mb-12 border-borderColor border hover:border-1"
+      className="  bg-componentColor  text-portfolioText p-12 p-max-12 text-center hover:shadow-lg max-w-prose mx-auto rounded-xl mb-12 border-borderColor border hover:border-1"
     >
       <h1 className="text-4xl font-bold mb-4">Présentation</h1>
       <p className="text-lg">Bonjour, c'est Ilyes Tlati 👋 </p>
