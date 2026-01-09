@@ -7,14 +7,13 @@ const About = () => {
       <h1 className="text-4xl font-bold mb-4">Présentation</h1>
       <p className="text-lg">Bonjour, c'est Ilyes Tlati 👋 </p>
       <p className=" #about text-lg text-center  max-w-prose  mx-auto">
-        Je suis actuellement étudiant au lycée Turgot à paris 3e 🗺️ en deuxième
-        année de BTS SIO (Services Informatiques aux Organisations) dans
-        l'option SLAM (Solutions Logicielles et Application Métier) qui est une
-        option spécialisée pour le développement 💻 Actuellement toujours en
-        cours d'étude 🎓, je vous propose sur ce portfolio de retrouver
-        ci-dessous les différentes études, et projet professionnel que j'ai pu
-        entreprendre au sein de ma carrière. Vous retrouverez ci-dessus mon CV
-        ainsi ci-dessous que mes différents projets 🧑‍💻
+        Je suis actuellement étudiant au lycée Turgot à Paris 3e 🗺️, en deuxième
+        année de BTS SIO (Services Informatiques aux Organisations), option SLAM
+        (Solutions Logicielles et Applications Métiers), une spécialisation dans
+        le développement 💻. Toujours en cours d'études 🎓, je vous présente sur
+        ce portfolio les différentes études et projets professionnels que j'ai
+        pu entreprendre. Vous retrouverez mon CV ci-dessus et mes différents
+        projets ci-dessous 🧑‍💻
       </p>
     </section>
   );

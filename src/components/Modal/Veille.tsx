@@ -53,7 +53,7 @@ const Veille: React.FC<NavigationProps> = ({
 
           <p>
             Son adoption progresse rapidement dans l’écosystème JavaScript,
-            notamment pour les projets backend, APIs et outils de
+            notamment pour les projets backend, API et outils de
             développement. Bun pousse ainsi l’écosystème à évoluer vers plus
             de simplicité et de performance.
           </p>
@@ -61,7 +61,7 @@ const Veille: React.FC<NavigationProps> = ({
           <p>
             Pour les développeurs, Bun représente un changement de paradigme :
             moins de configuration, une productivité accrue et une forte
-            compatibilité avec l’existant Node.js.
+            compatibilité avec l’écosystème Node.js existant.
           </p>
         </div>
 

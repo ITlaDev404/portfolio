@@ -1,7 +1,7 @@
 import languages from "../data/languages.ts";
-import frameworks from "../data/framworks.ts";
+import frameworks from "../data/frameworks.ts";
 import databases from "../data/databases.ts";
-import touls from "../data/touls.ts";
+import tools from "../data/tools.ts";
 const Skills = () => {
   return (
     <section
@@ -12,7 +12,7 @@ const Skills = () => {
       {/*  languages de programation */}
       <section className="group bg-componentColor2 text-black p-12 text-center pt-2.5 w-4xl h-70 max-h-80 m-auto border-borderColor border hover:shadow-lg rounded-xl mb-12   pb-">
         <h1 className="text-lg font-bold mb-8 group-hover:underline">
-          languages de programation
+          Langages de programmation
         </h1>
         <div className="flex flex-wrap justify-center gap-8">
           {languages.map((language) => (
@@ -93,7 +93,7 @@ const Skills = () => {
           Outils & Environnements
         </h1>
         <div className="flex flex-wrap justify-center gap-8">
-          {touls.map((toul) => (
+          {tools.map((toul) => (
             <div key={toul.id} className="">
               <a href={toul.demoUrl} target="_blank" rel="noopener noreferrer">
                 <img
