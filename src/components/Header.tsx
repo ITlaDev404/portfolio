@@ -49,18 +49,7 @@ const Header: React.FC<HeaderProps> = ({ onNavOpen, onConOpen, onVeilleOpen }) =
       >
         Contact
       </button>
-      <button
-        onClick={() =>
-          window.open(
-            "./Languages_img/E5.pdf",
-            "_blank",
-            "noopener,noreferrer"
-          )
-        }
-        className="bg-componentColor2 hover:bg-componentColor3 active:bg-componentColor border-solid border-borderColor text-portfolioText text-center bg-center text-2xl  grid-cols-1 px-4 py-2 rounded  hover:shadow-lg"
-      >
-        E5
-      </button>
+      
       <button
         onClick={onVeilleOpen}
         className="bg-componentColor2 hover:bg-componentColor3 active:bg-componentColor border-solid border-borderColor text-portfolioText text-center bg-center text-2xl  grid-cols-1 ml-4 px-4 py-2 rounded hover:shadow-lg mr-4"
