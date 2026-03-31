@@ -50,12 +50,7 @@ const Header: React.FC<HeaderProps> = ({ onNavOpen, onConOpen, onVeilleOpen }) =
         Contact
       </button>
       
-      <button
-        onClick={onVeilleOpen}
-        className="bg-componentColor2 hover:bg-componentColor3 active:bg-componentColor border-solid border-borderColor text-portfolioText text-center bg-center text-2xl  grid-cols-1 ml-4 px-4 py-2 rounded hover:shadow-lg mr-4"
-      >
-        Veille
-      </button>
+      
     </header>
   );
 };
