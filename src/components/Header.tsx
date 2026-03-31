@@ -6,7 +6,7 @@ interface HeaderProps {
   onVeilleOpen: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ onNavOpen, onConOpen, onVeilleOpen }) => {
+const Header: React.FC<HeaderProps> = ({ onNavOpen, onConOpen,  }) => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
