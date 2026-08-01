@@ -36,7 +36,7 @@ const languages: Language[] = [
     name: "JAVA",
     description: "",
     imageUrl: `${import.meta.env.BASE_URL}Languages_img/JAVA.png`,
-    demoUrl: "https://learn.microsoft.com/fr-fr/dotnet/csharp/",
+    demoUrl: "https://www.java.com/",
     
   },
   {
