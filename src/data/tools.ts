@@ -17,7 +17,7 @@ const touls: Touls[] = [
   },
   {
     id: 2,
-    name: "git",
+    name: "Git",
     description: ".",
     imageUrl: `${import.meta.env.BASE_URL}Languages_img/git.png`,
     demoUrl: "https://git-scm.com/",
@@ -25,7 +25,7 @@ const touls: Touls[] = [
   },
   {
     id: 3,
-    name: "github",
+    name: "GitHub",
     description: "",
     imageUrl: `${import.meta.env.BASE_URL}Languages_img/github.svg`,
     demoUrl: "https://github.com/",

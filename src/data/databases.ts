@@ -9,7 +9,7 @@ export interface Database {
 const databases: Database[] = [
   {
     id: 1,
-    name: "Postgresql",
+    name: "PostgreSQL",
     description: ".",
     imageUrl: `https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg`,
     demoUrl: "https://www.postgresql.org/",
@@ -17,7 +17,7 @@ const databases: Database[] = [
   },
   {
     id: 2,
-    name: "mariaDB",
+    name: "MariaDB",
     description: ".",
     imageUrl: `${import.meta.env.BASE_URL}Languages_img/MariaDB.png`,
     demoUrl: "https://mariadb.org/",
@@ -25,7 +25,7 @@ const databases: Database[] = [
   },
   {
     id: 3,
-    name: "Mysql",
+    name: "MySQL",
     description: "",
     imageUrl: `${import.meta.env.BASE_URL}Languages_img/Mysql.png`,
     demoUrl: "https://www.mysql.com/fr/",

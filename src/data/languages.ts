@@ -9,7 +9,7 @@ export interface Language {
 const languages: Language[] = [
   {
     id: 1,
-    name: "Javascript",
+    name: "JavaScript",
     description: ".",
     imageUrl: `${import.meta.env.BASE_URL}Languages_img/Javascript.png`,
     demoUrl: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
