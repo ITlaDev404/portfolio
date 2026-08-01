@@ -31,8 +31,16 @@ const languages: Language[] = [
     demoUrl: "https://learn.microsoft.com/fr-fr/dotnet/csharp/",
     
   },
-  {
+    {
     id: 4,
+    name: "JAVA",
+    description: "",
+    imageUrl: `${import.meta.env.BASE_URL}Languages_img/JAVA.png`,
+    demoUrl: "https://learn.microsoft.com/fr-fr/dotnet/csharp/",
+    
+  },
+  {
+    id: 5,
     name: "PHP",
     description: "",
     imageUrl: `${import.meta.env.BASE_URL}Languages_img/PHP.png`,

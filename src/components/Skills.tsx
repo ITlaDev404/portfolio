@@ -25,7 +25,11 @@ const Skills = () => {
                 <img
                   src={language.imageUrl}
                   alt={language.name}
-                  className="size-30 hover:size-35 object-contain mx-auto  "
+                  className={`${
+                    language.name === "JAVA"
+                      ? "size-40 hover:size-45 mb-15"
+                      : "size-30 hover:size-35 mt-10"
+                  } object-contain mx-auto`}
                 />
               </a>
               <div className="p-6">
