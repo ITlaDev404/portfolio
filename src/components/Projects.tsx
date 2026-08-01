@@ -12,7 +12,7 @@ const Projects = () => {
               <h2 className="text-2xl font-bold mb-2">{project.name}</h2>
               <p className="text-gray-700 mb-4">{project.description}</p>
               <div className="flex justify-center space-x-4">
-                {project.demoUrl && (
+                {project.demo && (
                   <a
                     href={project.demoUrl}
                     target="_blank"
