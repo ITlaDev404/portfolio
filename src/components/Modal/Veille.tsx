@@ -14,28 +14,34 @@ const Veille: React.FC<NavigationProps> = ({
   }
 
   return (
-    <div className="fixed inset-0 bg-black/20 z-999 flex justify-center items-center w-screen h-screen">
-      <div className="bg-componentColor w-[600px] h-[800px] p-6 rounded-xl overflow-y-auto relative">
+    <div
+      onClick={onCloseVeille}
+      className="fixed inset-0 bg-black/20 z-999 flex justify-center items-center p-4 w-screen h-screen"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="bg-componentColor w-full max-w-[600px] max-h-[85vh] p-5 sm:p-6 rounded-xl overflow-y-auto relative shadow-xl"
+      >
         {/* Bouton fermeture */}
         <button
           onClick={onCloseVeille}
-          className="text-protfolioText text-2xl absolute top-4 right-4 hover:font-bold hover:underline"
+          className="text-portfolioText text-2xl absolute top-4 right-4 hover:font-bold hover:underline"
         >
           X
         </button>
 
         {/* Titre */}
-        <h1 className="text-protfolioText text-3xl font-bold mb-6 text-center">
+        <h1 className="text-portfolioText text-2xl sm:text-3xl font-bold mb-6 text-center pr-6">
           Veille Technologique
         </h1>
 
         {/* Sujet */}
-        <h2 className="text-portfolioText2 text-xl font-semibold mb-4">
+        <h2 className="text-portfolioText2 text-lg sm:text-xl font-semibold mb-4">
           Bun : un nouvel écosystème JavaScript tout-en-un
         </h2>
 
         {/* Contexte */}
-        <div className="text-protfolioText text-left space-y-4 text-base">
+        <div className="text-portfolioText text-left space-y-4 text-sm sm:text-base">
           <p>
             <strong>Bun</strong> est un runtime JavaScript moderne développé en
             Zig, conçu pour remplacer ou compléter Node.js et Deno. Il adopte

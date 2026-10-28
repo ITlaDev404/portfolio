@@ -14,29 +14,39 @@ const ContactModal: React.FC<NavigationProps> = ({
   }
 
   return (
-    <div className="fixed inset-0 bg-black/20 bg-opacity-200 z-999 flex justify-start text-center w-screen h-screen top-0 left-0">
-      <div className="bg-componentColor m-auto   w-80 h-80 p-4 justify-center transform transition-transform duration-300 ease-in-out  max-w-prose mx-auto rounded-xl">
+    <div
+      onClick={onCloseContact}
+      className="fixed inset-0 bg-black/20 z-999 flex items-center justify-center p-4 w-screen h-screen top-0 left-0"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="bg-componentColor w-full max-w-xs sm:max-w-sm p-6 text-center transform transition-transform duration-300 ease-in-out rounded-xl relative shadow-xl"
+      >
         <button
           onClick={onCloseContact}
-          className="text-protfolioText text-2xl float-right hover:font-bold active:text-gray-600 hover:underline"
+          className="text-portfolioText text-2xl absolute top-4 right-4 hover:font-bold active:text-gray-600 hover:underline"
         >
           X
         </button>
-        <h2 className="text-protfolioText text-3xl font-bold mb-10 -auto ">
+        <h2 className="text-portfolioText text-2xl sm:text-3xl font-bold mb-8">
           Contact
         </h2>
-        <ul className="text-2xl ml-5 text-left  ">
-          <li className="hover:text-3xl mb-10 hover:text-portfolioText2 hover:underline size-2/12 hover:size-3/13">
+        <ul className="text-xl sm:text-2xl ml-4 text-left space-y-6">
+          <li className="hover:text-portfolioText2 hover:underline transition-transform origin-left hover:translate-x-1">
             <a
               href="mailto:ilyes.tlati@proton.me"
               onClick={onCloseContact}
               className="flex items-center gap-4"
             >
-              <img src="./Languages_img/email.png" className="" />
-              Email
+              <img
+                src="./Languages_img/email.png"
+                alt="Email"
+                className="size-8 sm:size-10 object-contain shrink-0"
+              />
+              <span>Email</span>
             </a>
           </li>
-          <li className="hover:text-3xl mb-1.5 hover:text-portfolioText2 hover:underline size-10 hover:size-12">
+          <li className="hover:text-portfolioText2 hover:underline transition-transform origin-left hover:translate-x-1">
             <a
               href="https://github.com/ITlaDev404"
               className="flex items-center gap-4"
@@ -45,9 +55,10 @@ const ContactModal: React.FC<NavigationProps> = ({
             >
               <img
                 src="./Languages_img/github.svg"
-                className="  object-contain"
+                alt="GitHub"
+                className="size-8 sm:size-10 object-contain shrink-0"
               />
-              <p>GitHub</p>
+              <span>GitHub</span>
             </a>
           </li>
         </ul>

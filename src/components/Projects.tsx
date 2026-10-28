@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-componentColor text-portfolioText px-4 py-10 sm:px-8 md:p-12 text-center border-borderColor border hover:shadow-lg transition-shadow mb-20 md:mb-40 w-full max-w-7xl mx-auto rounded-xl"
+      className="bg-componentColor text-portfolioText px-4 py-10 sm:px-8 md:p-12 text-center border-borderColor border hover:shadow-lg transition-shadow mb-20 md:mb-40 w-[calc(100%-2rem)] sm:w-full max-w-7xl mx-auto rounded-xl"
     >
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8">Mes Projets</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">

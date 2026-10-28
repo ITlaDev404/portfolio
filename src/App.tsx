@@ -29,7 +29,7 @@ function App() {
         isOpenVeille={isMenuVeilleOpen}
         onCloseVeille={() => setIsMenuVeilleOpen(false)}
       />
-      <div className="min-h-screen bg-portfolioBackground2 text-gray-900 flex flex-col">
+      <div className="min-h-screen bg-portfolioBackground2 text-gray-900 flex flex-col overflow-x-hidden">
         <Header
           onNavOpen={() => setIsMenuNavOpen(true)}
           onConOpen={() => setIsMenuConOpen(true)}

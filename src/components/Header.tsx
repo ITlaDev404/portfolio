@@ -20,13 +20,13 @@ const Header: React.FC<HeaderProps> = ({ onNavOpen, onConOpen,  }) => {
 
   return (
     <header
-      className={` sticky top-0 z-50 transition-colors duration-300 ${
+      className={`sticky top-0 z-50 transition-colors duration-300 ${
         isScrolled ? "bg-componentColor shadow-lg" : "bg-portfolioBackground2"
-      } duration-300  text-protfolioText p-4 text-center text-2xl font-bold  border-borderColor border-b`}
+      } text-portfolioText px-3 py-3 sm:p-4 text-center font-bold border-borderColor border-b flex flex-wrap items-center justify-center gap-2 sm:gap-4`}
     >
       <button
         onClick={onNavOpen}
-        className="opeModalNav bg-componentColor2 hover:bg-componentColor3  active:bg-componentColor border-solid border-borderColor text-portfolioText text-center bg-center text-2xl  grid-cols-1 mr-4 px-4 py-2 rounded hover:shadow-lg  "
+        className="opeModalNav bg-componentColor2 hover:bg-componentColor3 active:bg-componentColor border border-borderColor text-portfolioText text-center text-base sm:text-xl md:text-2xl px-3 py-1.5 sm:px-4 sm:py-2 rounded hover:shadow-lg transition-shadow"
       >
         Navigation
       </button>
@@ -39,18 +39,17 @@ const Header: React.FC<HeaderProps> = ({ onNavOpen, onConOpen,  }) => {
             "noopener,noreferrer"
           )
         }
-        className="bg-componentColor2 hover:bg-componentColor3 active:bg-componentColor border-solid border-borderColor text-portfolioText text-center bg-center text-2xl  grid-cols-1 px-4 py-2 rounded  hover:shadow-lg"
+        className="bg-componentColor2 hover:bg-componentColor3 active:bg-componentColor border border-borderColor text-portfolioText text-center text-base sm:text-xl md:text-2xl px-3 py-1.5 sm:px-4 sm:py-2 rounded hover:shadow-lg transition-shadow"
       >
         Télécharger CV
       </button>
+
       <button
         onClick={onConOpen}
-        className="bg-componentColor2 hover:bg-componentColor3 active:bg-componentColor border-solid border-borderColor text-portfolioText text-center bg-center text-2xl  grid-cols-1 ml-4 px-4 py-2 rounded hover:shadow-lg mr-4"
+        className="bg-componentColor2 hover:bg-componentColor3 active:bg-componentColor border border-borderColor text-portfolioText text-center text-base sm:text-xl md:text-2xl px-3 py-1.5 sm:px-4 sm:py-2 rounded hover:shadow-lg transition-shadow"
       >
         Contact
       </button>
-      
-      
     </header>
   );
 };

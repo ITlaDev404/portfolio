@@ -11,40 +11,46 @@ const Navigation: React.FC<NavigationProps> = ({ isOpen, onClose }) => {
   }
 
   return (
-    <div className="fixed inset-0 bg-black/20 bg-opacity-200 z-999 flex justify-start text-center w-screen h-screen top-0 left-0">
-      <div className="bg-componentColor m-auto   w-80 h-80 p-4 justify-center transform transition-transform duration-300 ease-in-out  max-w-prose mx-auto rounded-xl">
+    <div
+      onClick={onClose}
+      className="fixed inset-0 bg-black/20 z-999 flex items-center justify-center p-4 w-screen h-screen top-0 left-0"
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="bg-componentColor w-full max-w-xs sm:max-w-sm p-6 text-center transform transition-transform duration-300 ease-in-out rounded-xl relative shadow-xl"
+      >
         <button
           onClick={onClose}
-          className="text-protfolioText text-2xl float-right hover:font-bold active:text-gray-600"
+          className="text-portfolioText text-2xl absolute top-4 right-4 hover:font-bold active:text-gray-600"
         >
           X
         </button>
-        <h2 className="text-protfolioText text-3xl font-bold mb-4 -auto ">
+        <h2 className="text-portfolioText text-2xl sm:text-3xl font-bold mb-6">
           Navigation
         </h2>
-        <ul className="text-2xl ml-5 text-left  ">
-          <li className="hover:text-3xl mb-1.5 hover:text-portfolioText2 hover:underline">
-            <a href="#hero" onClick={onClose}>
+        <ul className="text-xl sm:text-2xl ml-4 text-left space-y-3">
+          <li className="hover:text-portfolioText2 hover:underline transition-transform origin-left hover:translate-x-1">
+            <a href="#hero" onClick={onClose} className="block">
               #Accueil
             </a>
           </li>
-          <li className="hover:text-3xl mb-1.5 hover:text-portfolioText2 hover:underline">
-            <a href="#about" onClick={onClose}>
+          <li className="hover:text-portfolioText2 hover:underline transition-transform origin-left hover:translate-x-1">
+            <a href="#about" onClick={onClose} className="block">
               #À propos
             </a>
           </li>
-          <li className="hover:text-3xl mb-1.5 hover:text-portfolioText2 hover:underline">
-            <a href="#skills" onClick={onClose}>
+          <li className="hover:text-portfolioText2 hover:underline transition-transform origin-left hover:translate-x-1">
+            <a href="#skills" onClick={onClose} className="block">
               #Compétences
             </a>
           </li>
-          <li className="hover:text-3xl mb-1.5 hover:text-portfolioText2 hover:underline">
-            <a href="#projects" onClick={onClose}>
+          <li className="hover:text-portfolioText2 hover:underline transition-transform origin-left hover:translate-x-1">
+            <a href="#projects" onClick={onClose} className="block">
               #Projets
             </a>
           </li>
-          <li className="hover:text-3xl mb-1.5 hover:text-portfolioText2 hover:underline">
-            <a href="#contact" onClick={onClose}>
+          <li className="hover:text-portfolioText2 hover:underline transition-transform origin-left hover:translate-x-1">
+            <a href="#contact" onClick={onClose} className="block">
               #Contact
             </a>
           </li>
