@@ -35,7 +35,7 @@ function App() {
         isOpenCv={isMenuCvOpen}
         onCloseCv={() => setIsMenuCvOpen(false)}
       />
-      <div className="min-h-screen bg-portfolioBackground2 text-gray-900 flex flex-col overflow-x-hidden">
+      <div className="min-h-screen bg-portfolioBackground2 text-gray-900 flex flex-col overflow-x-clip">
         <Header
           onNavOpen={() => setIsMenuNavOpen(true)}
           onConOpen={() => setIsMenuConOpen(true)}
