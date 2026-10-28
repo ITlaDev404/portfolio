@@ -4,9 +4,10 @@ interface HeaderProps {
   onNavOpen: () => void;
   onConOpen: () => void;
   onVeilleOpen: () => void;
+  onCvOpen: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ onNavOpen, onConOpen,  }) => {
+const Header: React.FC<HeaderProps> = ({ onNavOpen, onConOpen, onCvOpen }) => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   useEffect(() => {
@@ -32,13 +33,7 @@ const Header: React.FC<HeaderProps> = ({ onNavOpen, onConOpen,  }) => {
       </button>
 
       <button
-        onClick={() =>
-          window.open(
-            "./Languages_img/CV.pdf",
-            "_blank",
-            "noopener,noreferrer"
-          )
-        }
+        onClick={onCvOpen}
         className="bg-componentColor2 hover:bg-componentColor3 active:bg-componentColor border border-borderColor text-portfolioText text-center text-base sm:text-xl md:text-2xl px-3 py-1.5 sm:px-4 sm:py-2 rounded hover:shadow-lg transition-shadow"
       >
         Télécharger CV
